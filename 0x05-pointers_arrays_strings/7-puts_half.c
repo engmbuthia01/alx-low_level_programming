@@ -12,7 +12,7 @@ int full_string, half_string;
 
 full_string = 0;
 while (str[full_string] != '\0')
-full string++;
+full_string++;
 
 half_string = full_string / 2;
 
