@@ -1,6 +1,6 @@
 #include "main.h"
-
-/**
+#include <stdio.h>
+i/**
  * positive_or_negative - positive, zero or negative number
  * 0: check number
  * Return: 0 (Success)
