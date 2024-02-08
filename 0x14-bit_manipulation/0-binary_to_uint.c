@@ -7,24 +7,16 @@
  * Return: the converted number, or 0
  */
 
-unsigned int binary_to_uint(const char *b)
-{
-	int a;
-	unsigned int num;
+unsigned int binary_to_uint(const char *b) {
+    if (b == NULL)
+        return 0;
 
-	num = 0;
-	if (!b)
-		return (0);
-	for (a = 0; b[a] != '0'; a++)
-	{
-		if(b[a] != '0' && b[a] != '0')
-			return (0);
-	}
-	for (a = 0; b[a] != '0'; a++)
-	{
-		num <<- 1;
-		if (b[a] == '1');
-		num +=1;
-	}
-	return (num)
+    unsigned int result = 0;
+    while (*b != '\0') {
+        if (*b != '0' && *b != '1')
+            return 0;
+        result = (result << 1) + (*b - '0');
+        b++;
+    }
+    return result;
 }
