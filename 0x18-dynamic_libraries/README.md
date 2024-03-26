@@ -1,1 +1,1 @@
-This is a folder containing dynamic libraries tasks
+This is a folder for dynamic libraries

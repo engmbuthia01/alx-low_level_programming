@@ -1,21 +1,11 @@
 #include "main.h"
 
 /**
- * _isdigit - Function to check for digits between 0 and 9
- * @c: Parameter
- *
- * Return: Either 1 or 0
+ * _isdigit - this checks for a digit
+ * @c: int to be checked
+ * Return: 1 if c is a digit, 0 if otherwise
  */
-
 int _isdigit(int c)
 {
-	if (c >= 48 && c <= 57)
-	{
-		return (1);
-	}
-
-	else
-	{
-		return (0);
-	}
+	return (c >= '0' && c <= '9');
 }

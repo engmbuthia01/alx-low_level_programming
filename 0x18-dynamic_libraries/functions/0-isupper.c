@@ -1,20 +1,14 @@
 #include "main.h"
-
 /**
- * _isupper - Function to check for uppercase
- * @c: Parameter
+ * _isupper - func check if uppercase letters
+ * @c: char to check
  *
- * Return: Either 1 or 0
+ * Return: if uppercase return 1, else return 0
  */
-
 int _isupper(int c)
 {
 	if (c >= 'A' && c <= 'Z')
-	{
 		return (1);
-	}
-	else
-	{
-		return (0);
-	}
+
+	return (0);
 }

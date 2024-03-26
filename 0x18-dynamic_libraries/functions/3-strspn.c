@@ -1,36 +1,28 @@
 #include "main.h"
-
 /**
- * _strspn - Function that gets the length of a prefix substring
- * @s: string to be compared with
- * @accept: String to compare
- *
- * Return: Always Count.
+ * _strspn - Program entry point
+ * @s: input val
+ * @accept: input val
+ * Return: Always 0 (Success)
  */
-
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int count = 0;
-	int i = 0;
+	unsigned int n = 0;
+	int a;
 
-	while (s[i] != '\0')
+	while (*s)
 	{
-		int y = 0;
-
-		while (accept[y] != '\0')/*accept strings compares with elements in s*/
+		for (a = 0; accept[a]; a++)
 		{
-			if (accept[y] == s[i])
+			if (*s == accept[a])
 			{
-				count++;
-				break; /*breaks if counted */
+				n++;
+				break;
 			}
-			y++;
+			else if (accept[a + 1] == '\0')
+				return (n);
 		}
-		if (s[i] != accept[y])
-		{
-			break; /*if not found break out*/
-		}
-		i++;
+		s++;
 	}
-	return (count);
+	return (n);
 }
