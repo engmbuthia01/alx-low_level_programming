@@ -4,7 +4,6 @@
  * main - This is the entry point
  * Description: program using the putchar function to
  * prints all single digit numbers of base 10 starting from 0
- * 
  * Return: 0
  */
 
