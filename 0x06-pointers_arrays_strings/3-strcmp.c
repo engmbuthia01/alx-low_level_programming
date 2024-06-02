@@ -1,11 +1,10 @@
 #include "main.h"
 /**
- * _strncpy - copies a string
- * @dest: destination
- * @src: source
- * @n: amount of bytes from src
+ * _strcmp - Function that compares two strings.
+ * @s1: String 1
+ * @s2: String 2
  *
- * Return: pointer to the vresulting dest
+ * Return: Always the value.
  */
 
 int _strcmp(char *s1, char *s2)
